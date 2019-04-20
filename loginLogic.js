@@ -1,9 +1,12 @@
 function login() {
-    
+
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     
-    if(username != "aa" || password != "123456"){
+    var localUserName = localStorage.getItem("username")
+    var localPassword = localStorage.getItem("password")
+
+    if(username != localUserName || password != localPassword){
 
         window.location.href='fail.html';
 
