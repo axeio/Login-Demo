@@ -2,31 +2,15 @@
 <html>
 
 <head>
-    <script>
-        function login() {
-
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            
-            if(username != "aa" || password != "123456"){
-
-                window.location.href='fail.html';
-
-            }else{
-
-                window.location.href='sucess.html';
-
-            }
-        }
-    </script>
+    <script type="text/javascript"  src="loginLogic.js"></script>
 </head>
 
 <body>
     User name:<br>
-    <input type="text" id="username" name="username" placeholder="用户名：aa"/>
+    <input type="text" id="username" name="username" placeholder="用户名：aa" />
     <br>
     Password:<br>
-    <input type="password" id="password" name="password" placeholder="密码：123456"/>
+    <input type="password" id="password" name="password" placeholder="密码：123456" />
     <br>
     <br>
     <input type="button" value="登入" onclick="login()">
